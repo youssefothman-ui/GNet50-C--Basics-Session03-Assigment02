@@ -86,15 +86,29 @@ namespace ASSIGMENT_2
             // Given pages = 464, write an if/else statement.
             // Print "Long Book" if pages > 300, otherwise "Short Book".
 
-            int pages = 464;
+            //int pages = 464;
 
-            if (pages > 300)
+            //if (pages > 300)
+            //{
+            //    Console.WriteLine("Long Book");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Short Book");
+            //}
+            #endregion
+
+
+            #region Q9
+            // Given pages = 464 and isAvailable = true,
+            // print the message only if both conditions are true using &&.
+
+             int pages = 464;
+            bool isAvailable = true;
+
+            if (pages > 300 && isAvailable == true)
             {
-                Console.WriteLine("Long Book");
-            }
-            else
-            {
-                Console.WriteLine("Short Book");
+                Console.WriteLine("You can borrow this book");
             }
             #endregion
 
