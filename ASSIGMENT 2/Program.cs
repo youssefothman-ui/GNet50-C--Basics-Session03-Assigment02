@@ -103,14 +103,40 @@ namespace ASSIGMENT_2
             // Given pages = 464 and isAvailable = true,
             // print the message only if both conditions are true using &&.
 
-             int pages = 464;
-            bool isAvailable = true;
+            // int pages = 464;
+            //bool isAvailable = true;
 
-            if (pages > 300 && isAvailable == true)
+            //if (pages > 300 && isAvailable == true)
+            //{
+            //    Console.WriteLine("You can borrow this book");
+            //}
+            #endregion
+
+
+            #region Q10
+            // Given title = "Refactoring", write a switch statement.
+            // Clean Code: Great choice!
+            // Refactoring: Nice pick!
+            // Anything else: Never heard of it.
+
+            string title = "Refactoring";
+
+            switch (title)
             {
-                Console.WriteLine("You can borrow this book");
+                case "Clean Code":
+                    Console.WriteLine("Great choice!");
+                    break;
+
+                case "Refactoring":
+                    Console.WriteLine("Nice pick!");
+                    break;
+
+                default:
+                    Console.WriteLine("Never heard of it");
+                    break;
             }
             #endregion
+
 
 
 
