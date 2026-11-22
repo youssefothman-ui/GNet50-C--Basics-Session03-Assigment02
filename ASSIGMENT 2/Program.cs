@@ -216,11 +216,28 @@ namespace ASSIGMENT_2
             // Using the same books array, print each title,
             // but stop completely using break when you reach "Refactoring".
 
+            //foreach (string book in books)
+            //{
+            //    if (book == "Refactoring")
+            //    {
+            //        break;
+            //    }
+
+            //    Console.WriteLine(book);
+            //}
+            #endregion
+
+
+            #region Q17
+            // Using the same books array, print every title
+            // except "The Pragmatic Programmer".
+            // Skip it using continue.
+
             foreach (string book in books)
             {
-                if (book == "Refactoring")
+                if (book == "The Pragmatic Programmer")
                 {
-                    break;
+                    continue;
                 }
 
                 Console.WriteLine(book);
