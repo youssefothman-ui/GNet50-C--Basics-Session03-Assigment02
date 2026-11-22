@@ -1,4 +1,6 @@
-﻿namespace ASSIGMENT_2
+﻿using System.Text;
+
+namespace ASSIGMENT_2
 {
     internal class Program
     {
@@ -18,13 +20,24 @@
             // Declare two separate strings with the same literal.
             // Use ReferenceEquals() to check if they point to the same object.
 
-            string str1 = "Clean Code";
-            string str2 = "Clean Code";
+            //string str1 = "Clean Code";
+            //string str2 = "Clean Code";
 
-            Console.WriteLine(ReferenceEquals(str1, str2));
+            //Console.WriteLine(ReferenceEquals(str1, str2));
             #endregion
 
 
+            #region Q3
+            // Create a StringBuilder, Append "Book List",
+            // then Append " - Updated" onto the same object.
+
+            StringBuilder sb = new StringBuilder();
+
+            sb.Append("Book List");
+            sb.Append(" - Updated");
+
+            Console.WriteLine(sb);
+            #endregion
 
 
         }
