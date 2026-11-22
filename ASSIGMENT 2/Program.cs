@@ -66,9 +66,20 @@ namespace ASSIGMENT_2
             #region Q6
             // Build the same sentence using string interpolation ($"...").
 
-            string sentence2 = $"Book: {title}, Pages: {pages}";
+            //string sentence2 = $"Book: {title}, Pages: {pages}";
 
-            Console.WriteLine(sentence2);
+            //Console.WriteLine(sentence2);
+            #endregion
+
+
+
+
+            #region Q7
+            // Build the same sentence using string.Format().
+
+            string sentence3 = string.Format("Book: {0}, Pages: {1}", title, pages);
+
+            Console.WriteLine(sentence3);
             #endregion
 
 
