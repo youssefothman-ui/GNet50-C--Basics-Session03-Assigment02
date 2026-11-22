@@ -40,6 +40,16 @@ namespace ASSIGMENT_2
             #endregion
 
 
+
+            #region Q4
+            // Using the StringBuilder above, Replace "Book List" with "Library".
+
+            sb.Replace("Book List", "Library");
+
+            Console.WriteLine(sb);
+            #endregion
+
+
         }
     }
 }
