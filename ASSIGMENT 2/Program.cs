@@ -165,10 +165,10 @@ namespace ASSIGMENT_2
                 "Refactoring"
             };
 
-            for (int i = 0; i < books.Length; i++)
-            {
-                Console.WriteLine((i + 1) + ". " + books[i]);
-            }
+            //for (int i = 0; i < books.Length; i++)
+            //{
+            //    Console.WriteLine((i + 1) + ". " + books[i]);
+            //}
             #endregion
 
 
@@ -233,17 +233,41 @@ namespace ASSIGMENT_2
             // except "The Pragmatic Programmer".
             // Skip it using continue.
 
-            foreach (string book in books)
-            {
-                if (book == "The Pragmatic Programmer")
-                {
-                    continue;
-                }
+            //foreach (string book in books)
+            //{
+            //    if (book == "The Pragmatic Programmer")
+            //    {
+            //        continue;
+            //    }
 
-                Console.WriteLine(book);
-            }
+            //    Console.WriteLine(book);
+            //}
             #endregion
 
+
+
+            #region Q18
+            // Write a method PrintFirstBook() that prints
+            // the first book in the books array.
+            // If the array is empty, use return to exit early.
+
+            PrintFirstBook(books);
+            #endregion
         }
+
+        #region PrintFirstBook Method
+
+        static void PrintFirstBook(string[] books)
+        {
+            if (books.Length == 0)
+            {
+                return;
+            }
+
+            Console.WriteLine(books[0]);
+        }
+
+        #endregion
     }
 }
+
