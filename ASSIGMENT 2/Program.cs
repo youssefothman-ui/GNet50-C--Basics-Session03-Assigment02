@@ -31,12 +31,12 @@ namespace ASSIGMENT_2
             // Create a StringBuilder, Append "Book List",
             // then Append " - Updated" onto the same object.
 
-            StringBuilder sb = new StringBuilder();
+            //StringBuilder sb = new StringBuilder();
 
-            sb.Append("Book List");
-            sb.Append(" - Updated");
+            //sb.Append("Book List");
+            //sb.Append(" - Updated");
 
-            Console.WriteLine(sb);
+            //Console.WriteLine(sb);
             #endregion
 
 
@@ -44,10 +44,24 @@ namespace ASSIGMENT_2
             #region Q4
             // Using the StringBuilder above, Replace "Book List" with "Library".
 
-            sb.Replace("Book List", "Library");
+            //sb.Replace("Book List", "Library");
 
-            Console.WriteLine(sb);
+            //Console.WriteLine(sb);
             #endregion
+
+
+            #region Q5
+            // Given title = "Clean Code" and pages = 464,
+            // build the sentence using the + operator.
+
+             string title = "Clean Code";
+            int pages = 464;
+
+            string sentence = "Book: " + title + ", Pages: " + pages;
+
+            Console.WriteLine(sentence);
+            #endregion
+
 
 
         }
