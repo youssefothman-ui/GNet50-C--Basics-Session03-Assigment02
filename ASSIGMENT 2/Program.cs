@@ -54,13 +54,26 @@ namespace ASSIGMENT_2
             // Given title = "Clean Code" and pages = 464,
             // build the sentence using the + operator.
 
-             string title = "Clean Code";
+            string title = "Clean Code";
             int pages = 464;
 
             string sentence = "Book: " + title + ", Pages: " + pages;
 
             Console.WriteLine(sentence);
             #endregion
+
+
+            #region Q6
+            // Build the same sentence using string interpolation ($"...").
+
+            string sentence2 = $"Book: {title}, Pages: {pages}";
+
+            Console.WriteLine(sentence2);
+            #endregion
+
+
+
+
 
 
 
