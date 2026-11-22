@@ -205,8 +205,24 @@ namespace ASSIGMENT_2
             // Using the same books array, use a foreach loop
             // to print every book title.
 
+            //foreach (string book in books)
+            //{
+            //    Console.WriteLine(book);
+            //}
+            #endregion
+
+
+            #region Q16
+            // Using the same books array, print each title,
+            // but stop completely using break when you reach "Refactoring".
+
             foreach (string book in books)
             {
+                if (book == "Refactoring")
+                {
+                    break;
+                }
+
                 Console.WriteLine(book);
             }
             #endregion
